@@ -1,0 +1,71 @@
+.inputContainer h1 {
+  font-size: 3.5rem;
+  font-weight: 500;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+.inputContainer h1 span {
+  color: orange;
+}
+
+.inputContainer div {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.inputContainer input {
+  width: 100%;
+  padding: 0.5rem 0.2rem 0.5rem 0;
+  text-indent: 1rem;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  border-radius: 3px;
+}
+
+.inputContainer input::placeholder {
+  font-size: 0.9rem;
+}
+
+.inputContainer button {
+  padding: 0 1rem;
+  height: 3rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 3px;
+  color: #fff;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.inputContainer button:hover {
+  background-color: #fff;
+  color: orange;
+}
+
+@media screen and (max-width: 520px) {
+  .inputContainer h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  .container {
+    min-height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  .inputContainer {
+    width: 100%;
+  }
+
+  .inputShortener .inputShortener__input {
+    width: 100%;
+    text-indent: .8rem;
+  }
+}

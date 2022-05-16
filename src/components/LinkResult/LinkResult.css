@@ -1,0 +1,62 @@
+.result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.result p {
+  color: #fff;
+  border: 1px solid orange;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+}
+
+.result button {
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: orange;
+}
+
+.result button:hover {
+  background-color: #fff;
+  color: orange;
+}
+
+.result button.copied {
+  background: #fff;
+  color: orange;
+}
+
+.noData {
+  color: #fff;
+  font-size: 1rem;
+}
+
+@media screen and (max-width: 520px) {
+  .result {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+  }
+
+  .result p {
+    width: 100%;
+    margin-bottom: 1rem;
+    margin-right: 0;
+  }
+
+  .result button {
+    width: 100%;
+  }
+
+  .copied {
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 1rem;
+  }
+}
